@@ -1,0 +1,511 @@
+/* ========================================
+   RESET
+======================================== */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+/* ========================================
+   BASE
+======================================== */
+
+body {
+  font-family: Arial, sans-serif;
+  color: #333;
+}
+
+a {
+  text-decoration: none;
+}
+
+.container {
+  width: 90%;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+/* ========================================
+   BUTTONS
+======================================== */
+
+.btn {
+  display: inline-block;
+
+  padding: 12px 24px;
+
+  border: none;
+  border-radius: 8px;
+
+  background: rgb(46, 125, 50);
+  color: white;
+
+  cursor: pointer;
+
+  transition: 0.3s;
+}
+
+.btn:hover {
+  background: rgb(56, 142, 60);
+}
+
+/* ========================================
+   HEADER
+======================================== */
+
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+
+  width: 100%;
+
+  background: rgba(46, 125, 50, 0.75);
+
+  backdrop-filter: blur(8px);
+
+  z-index: 1000;
+}
+
+.header-container {
+  display: flex;
+
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 0px 0;
+}
+
+.logo img {
+  height: 100px;
+}
+
+.nav {
+  display: flex;
+  gap: 25px;
+}
+
+.nav a {
+  color: white;
+}
+
+.nav a:hover {
+  color: #ddd;
+}
+
+/* ========================================
+   HERO
+======================================== */
+
+.hero {
+  height: 50vh;
+  min-height: 500px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  text-align: center;
+
+  color: white;
+
+  background:
+    linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("section_image_1.jpg");
+
+  background-size: cover;
+  background-position: center;
+}
+
+.hero-content {
+  max-width: 800px;
+  padding: 20px;
+}
+
+.hero h1 {
+  font-size: 4rem;
+  margin-bottom: 20px;
+}
+
+.hero p {
+  margin-bottom: 30px;
+  line-height: 1.6;
+}
+
+/* ========================================
+   ABOUT
+======================================== */
+
+.about {
+  padding: 80px 0;
+}
+
+.about-container {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+
+.about-text {
+  flex: 3;
+}
+
+.about-image {
+  flex: 1;
+}
+
+.about-image img {
+  width: 100%;
+  border-radius: 12px;
+}
+
+.about-text h2 {
+  margin-bottom: 20px;
+}
+
+.about-text p {
+  margin-bottom: 15px;
+  line-height: 1.7;
+}
+
+/* ========================================
+   УНІВЕРСАЛЬНІ СЕКЦІЇ
+======================================== */
+
+.advantages,
+.steps,
+.reviews {
+  padding: 40px 0;
+}
+
+section {
+  scroll-margin-top: 100px;
+}
+
+.section-title {
+  text-align: center;
+  margin-bottom: 50px;
+  font-size: 2rem;
+}
+
+/* ========================================
+   НАШІ ПЕРЕВАГИ
+======================================== */
+
+.advantages {
+  background-color: #f7f5ee;
+}
+
+/* ========================================
+   КАРТКИ
+======================================== */
+
+.cards {
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+
+  flex-wrap: wrap;
+}
+
+.card {
+  flex: 1;
+  min-width: 250px;
+
+  padding: 30px;
+
+  background: #f5f5f5;
+
+  border-radius: 12px;
+
+  transition: 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.card h3 {
+  margin-bottom: 15px;
+}
+
+.card p {
+  line-height: 1.6;
+}
+
+/* ========================================
+   ВІДГУКИ
+======================================== */
+.reviews {
+  background-color: #f7f5ee;
+}
+.reviews .card {
+  background: #ffffff;
+
+  border: 1px solid #e0e0e0;
+}
+
+.review-avatar {
+  width: 100px;
+  height: 100px;
+
+  border-radius: 50%;
+  object-fit: cover;
+
+  display: block;
+  margin: 0 auto 20px;
+}
+
+.reviews strong {
+  display: block;
+
+  margin-top: 20px;
+}
+
+/* ========================================
+   ЕТАПИ РОБОТИ
+======================================== */
+
+.steps .card {
+  text-align: center;
+}
+
+/* ========================================
+   CONTACT
+======================================== */
+
+.contact {
+  margin: 80px 0;
+}
+
+.contact-content {
+  width: 90vw;
+  max-width: 1200px;
+  height: 450px;
+
+  margin: 0 auto;
+
+  display: flex;
+
+  background: #f7f5ee;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.contact-form {
+  width: 40%;
+
+  padding: 30px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.contact-form h2 {
+  margin-bottom: 15px;
+
+  font-size: 2.4rem;
+}
+
+.contact-form > p {
+  margin-bottom: 25px;
+}
+
+.contact-form form {
+  display: flex;
+  flex-direction: column;
+
+  gap: 15px;
+}
+
+.contact-form input {
+  padding: 14px;
+
+  border: 1px solid #ddd;
+
+  border-radius: 4px;
+}
+
+.privacy-text {
+  margin-top: 15px;
+  font-size: 0.9rem;
+  color: #666;
+}
+
+.privacy-text a {
+  color: rgb(46, 125, 50);
+  text-decoration: underline;
+}
+
+.privacy-text a:hover {
+  color: rgb(56, 142, 60);
+}
+
+.contact-form .btn {
+  align-self: center;
+}
+
+.contact-form small {
+  text-align: center;
+}
+
+.contact-map {
+  width: 60%;
+}
+
+.contact-map iframe {
+  width: 100%;
+  height: 100%;
+
+  border: none;
+
+  display: block;
+}
+
+/* ========================================
+   FOOTER
+======================================== */
+
+.footer {
+  background: #3f3f3f;
+  color: white;
+
+  padding-top: 50px;
+}
+
+.footer-container {
+  display: grid;
+
+  grid-template-columns: repeat(4, 1fr);
+
+  gap: 40px;
+}
+
+.footer-column h3,
+.footer-column h4 {
+  margin-bottom: 15px;
+}
+
+.footer-column ul {
+  list-style: none;
+}
+
+.footer-column li {
+  margin-bottom: 10px;
+}
+
+.footer-column a {
+  color: #d4d4d4;
+  transition: 0.3s;
+}
+
+.footer-column a:hover {
+  color: white;
+}
+
+.social-buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.footer-bottom {
+  margin-top: 40px;
+
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+
+  padding: 20px;
+
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-bottom-links {
+  color: #ddd;
+  padding: 5px;
+}
+
+.social-links {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.social-link {
+  width: 48px;
+  height: 48px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  border-radius: 50%;
+
+  color: white;
+  font-size: 1.3rem;
+
+  transition: 0.3s;
+}
+
+.social-link:hover {
+  transform: translateY(-3px) scale(1.1);
+}
+
+/* ========================================
+   MODAL
+======================================== */
+
+.modal {
+  display: none;
+
+  position: fixed;
+
+  top: 0;
+  left: 0;
+
+  width: 100%;
+  height: 100%;
+
+  background: rgba(0, 0, 0, 0.6);
+}
+
+.modal-content {
+  width: 350px;
+
+  background: white;
+
+  padding: 25px;
+
+  border-radius: 12px;
+
+  position: absolute;
+
+  top: 50%;
+  left: 50%;
+
+  transform: translate(-50%, -50%);
+}
+
+.modal-content form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.modal-content input {
+  padding: 10px;
+}
+
+.close {
+  float: right;
+  font-size: 28px;
+  cursor: pointer;
+}
