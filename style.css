@@ -615,6 +615,14 @@ section {
     text-align: center;
   }
 
+  .footer-column:last-child {
+    text-align: center;
+  }
+
+  .social-links {
+    justify-content: center;
+  }
+
   .contact-form {
     padding: 25px;
   }
